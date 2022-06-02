@@ -95,25 +95,25 @@ function Deals() {
   ];
   return (
     <>
-      <span className="title-deals">Featured Auckland deals</span>
+      <span className="title-deals m-3">Featured Auckland deals</span>
       <Button className="btn-view-deals">View More</Button>
-      <div className="div-deals">
+      <div className="div-deals gap-3">
         {cardDeals.map((element) => (
           <Card className="card-deals">
             <div className="div-img-desc">
               <Card.Img className="card-img" variant="top" src={element.img} />
-              <Card.Text className="card-desc">{element.desc}</Card.Text>
+              <Card.Text className="card-desc p-5">{element.desc}</Card.Text>
             </div>
-            <Card.Body className="card-body-home">
+            <Card.Body className="card-body-home p-3">
               <Card.Title className="card-title-deals">{element.title}</Card.Title>
               <Card.Text className="card-type-home">{element.type}</Card.Text>
               <Card.Text className="card-city-home">{element.city}</Card.Text>
-              <Card.Text className="from">from</Card.Text>
-              <div className="div-card-price">
+              <Card.Text className="from mt-2">from</Card.Text>
+              <div className="div-card-price d-flex justify-content-between">
                 <Card.Text>{element.buy}</Card.Text>
-                <div className="card-price-dis">
+                <div className="card-price-dis d-flex gap-2">
                   <Card.Text className="card-price">{element.price}</Card.Text>
-                  <Card.Text className="card-dis-deals">{element.discount}</Card.Text>
+                  <Card.Text className="card-dis-deals fw-bold">{element.discount}</Card.Text>
                 </div>
               </div>
             </Card.Body>
