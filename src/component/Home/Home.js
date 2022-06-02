@@ -49,17 +49,17 @@ function Home() {
       <Card>
         <Card.Img className="img-home" src={image} />
       </Card>
-      <div className="homepage-top">
+      <div className="homepage-top d-flex gap-3">
         <ListGroup as="ol" className="list-group list-group-flush">
-          <h3>Discover</h3>
+          <h3 className="pt-3 mb-0">Discover</h3>
           {List.map((element) => (
             <>
               <ListGroup.Item
                 as="li"
                 className="list d-flex justify-content-between"
               >
-                <div className="li-title">{element.title}</div>
-                <div className="number">{element.number}</div>
+                <div className="li-title pb-1 pt-1">{element.title}</div>
+                <div className="number mt-2">{element.number}</div>
               </ListGroup.Item>
             </>
           ))}
@@ -69,18 +69,18 @@ function Home() {
           <Card className="card">
             <div className="div-img-desc">
               <Card.Img className="card-img" variant="top" src={element.img} />
-              <Card.Text className="card-desc">{element.desc}</Card.Text>
+              <Card.Text className="card-desc p-5">{element.desc}</Card.Text>
             </div>
-            <Card.Body className="card-body-home">
+            <Card.Body className="card-body-home p-3">
               <Card.Title className="card-title">{element.title}</Card.Title>
               <Card.Text className="card-type-home">{element.type}</Card.Text>
               <Card.Text className="card-city-home">{element.city}</Card.Text>
-              <Card.Text className="from">from</Card.Text>
-              <div className="div-card-price">
+              <Card.Text className="from mt-2">from</Card.Text>
+              <div className="div-card-price d-flex justify-content-between">
                 <Card.Text>{element.buy}</Card.Text>
-                <div className="card-price-dis">
+                <div className="card-price-dis d-flex gap-2">
                   <Card.Text className="card-price">{element.price}</Card.Text>
-                  <Card.Text className="card-dis">{element.discount}</Card.Text>
+                  <Card.Text className="card-dis fw-bold">{element.discount}</Card.Text>
                 </div>
               </div>
             </Card.Body>
