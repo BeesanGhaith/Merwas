@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap');
 
 body {
   background-color: #f4f7fb;
@@ -54,8 +55,6 @@ body {
 
 .number {
   color: rgb(165, 165, 165);
-
-  /* font-family: "Source Sans Pro", sans-serif; */
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   margin-top: 0.5ch;
@@ -63,6 +62,7 @@ body {
 
 .card {
   height: 70%;
+  font-family: 'Sarabun', sans-serif;
 }
 
 .div-img-desc {
@@ -118,33 +118,74 @@ body {
 .div-card-price {
   display: flex;
   justify-content: space-between;
-  
-  /* font-family: "Source Sans Pro", sans-serif; */
   font-family: "Montserrat", sans-serif;
   color: rgb(165, 165, 165);
   margin-top: 8vh;
-  /* font-size: 0.9rem; */
+  font-size: 0.9rem;
 }
 
 .card-price {
   text-decoration: line-through;
-  font-weight: 900;
-  color: rgb(78, 78, 78);
+  font-weight: 600;
+  color: rgb(124, 124, 124);
 }
 
 .card-dis {
   font-size: 2.5rem;
   color: #01b2ee;
-  margin-top: -1vh;
+  margin-top: -1.5vh;
   font-weight: 900;
 }
 
 .card-price-dis {
   display: flex;
-  gap: 1ch;
+  gap: 1.5ch;
 }
 
+.form-email {
+    display: flex;
+    padding: 3ch;
+    margin: 0 1ch 1ch 1.2ch;
+    background-color: white;
+    font-family: 'Sarabun', sans-serif;
+    color: #01b2ee;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
 
+.email-label {
+    margin-right: 2ch;
+}
+
+.email-input {
+    box-shadow: 0 0 10px rgb(214, 212, 212);
+    border-radius: 4px 0 0 4px;
+    padding-left: 5ch;
+}
+
+.btn-subscribe {
+    background-color: #01b2ee;
+    width: 13ch;
+    box-shadow: 0 0 10px #01b2ee;
+    border-radius: 0 4px 4px 0;
+}
+
+.div-email-input {
+    width: 46%;
+    display: flex;
+    position: relative;
+}
+
+.btn-subscribe:hover {
+    background-color: #13c2fc;
+}
+
+.mail-icon {
+    position: absolute;
+    top: 0.8ch;
+    left: 1ch;
+    color: gray;
+}
 
 @media (max-width: 1115px) {
     .list-group {
