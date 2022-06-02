@@ -1,0 +1,82 @@
+.navbar {
+  background-color: #01b2ee;
+  height: 60px;
+  padding: 0 3vw 0 1vw;
+}
+
+.title {
+  font-size: 2rem;
+  color: white !important;
+  font-weight: bolder;
+}
+
+.location-icon,
+.email-icon {
+  color: white !important;
+  font-size: 2rem;
+}
+
+.arrow-icon {
+  color: white;
+}
+
+.navbar .nav-text {
+  color: white;
+}
+
+.nav-icon {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 1vw;
+}
+
+.navbar2 {
+  background-color: white;
+  box-shadow: 0 0 8px rgb(172, 172, 172);
+  margin-bottom: 3ch;
+  z-index: 0;
+}
+
+#navbarScroll .nav-text:hover {
+  color: #01b2ee;
+}
+
+#navbarScroll .nav-text {
+  font-weight: 500;
+  margin-right: 3ch;
+}
+
+#navbarScroll .nav-text-w {
+  margin-left: 3ch;
+}
+
+.arrow-icon2 {
+  margin-left: -3.5ch;
+  margin-top: 1.5ch;
+  color: #01b2ee;
+}
+
+.form {
+  position: relative;
+  margin-right: -25px;
+}
+
+.form-search {
+  width: 35vw;
+  text-align: left;
+  padding-left: 2.5vw;
+}
+
+.search-icon {
+  position: absolute;
+  top: 1vh;
+  left: 1vh;
+  font-size: 3ch;
+  color: rgb(75, 74, 74);
+}
+
+@media (max-width: 1115px) {
+  .navbar2 {
+    display: none;
+  }
+}
