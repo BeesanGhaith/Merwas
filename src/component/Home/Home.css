@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  background-color: #f4f7fb;
+  color: rgb(88, 88, 88);
+}
+
+.img-home {
+  padding: 0 2ch 0 1ch;
+  background-color: #f4f7fb;
+  border: 2px solid #f4f7fb;
+  cursor: pointer;
+}
+
+.homepage-top {
+  display: flex;
+  flex-direction: row;
+  gap: 2ch;
+  padding: 4ch 5ch 3ch 2ch;
+}
+
+.list-group {
+  width: 23%;
+}
+
+.list-group h3 {
+  color: #01b2ee;
+  font-weight: 600;
+  text-align: left;
+  background-color: white;
+  padding-left: 1ch;
+  height: 4.2ch;
+  margin-bottom: 0;
+  padding-top: 1ch;
+  border-bottom: 1px solid rgb(204, 202, 202);
+}
+
+.list {
+  border-bottom: 1px solid rgb(248, 247, 247);
+}
+
+.li-title {
+  
+    font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 0.1ch;
+  padding-top: 0.3ch;
+}
+
+.list:hover {
+  cursor: pointer;
+  color: #01b2ee;
+}
+
+.number {
+  color: rgb(165, 165, 165);
+
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 0.5ch;
+}
+
+.card {
+  height: 70%;
+}
+
+.div-img-desc {
+    position: relative;
+}
+
+.card-desc {
+    display: none;
+    background-color: #01b2ee;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    padding-left: 2ch;
+    padding-right: 2ch;
+
+}
+
+.card-img:hover ~ .card-desc{
+    display: block;
+}
+
+.card-desc:hover {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-body-home {
+  line-height: 4px;
+}
+
+.card-type-home {
+  color: #01b2ee;
+}
+
+.card-city-home {
+  color: rgb(165, 165, 165);
+}
+
+.from {
+  float: right;
+  color: #01b2ee;
+  font-size: 0.9rem;
+}
+
+.div-card-price {
+  display: flex;
+  justify-content: space-between;
+  
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  color: rgb(165, 165, 165);
+  margin-top: 8vh;
+  /* font-size: 0.9rem; */
+}
+
+.card-price {
+  text-decoration: line-through;
+  font-weight: 900;
+  color: rgb(78, 78, 78);
+}
+
+.card-dis {
+  font-size: 2.5rem;
+  color: #01b2ee;
+  margin-top: -1vh;
+  font-weight: 900;
+}
+
+.card-price-dis {
+  display: flex;
+  gap: 1ch;
+}
+
+
+
+@media (max-width: 1115px) {
+    .list-group {
+      display: none;
+    }
+  }
+  
