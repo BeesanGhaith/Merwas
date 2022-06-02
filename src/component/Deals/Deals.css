@@ -1,0 +1,57 @@
+.title-deals {
+    margin-left: 1ch;
+    font-size: 2rem;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 600;
+    /* margin: 2ch 0 2ch 1ch; */
+}
+
+.div-deals {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2vh;
+    margin: 3ch 4ch 3ch 2ch;
+}
+
+.card-deals {
+    height: 58vh;
+    border: none;
+    border-bottom: 1px solid rgb(214, 213, 213);
+
+}
+
+.btn-view-deals {
+    background-color: #01b2ee;
+    width: 14ch;
+    margin-top: -2ch;
+    margin-left: 3ch;
+    font-weight: 400;
+    border: none;
+}
+
+.btn-view-deals:hover {
+    background-color: #13c2fc;
+}
+
+.card-title-deals {
+    font-size: large;
+}
+
+.card-dis-deals {
+    font-size: 2rem;
+  color: #01b2ee;
+  margin-top: -1.5vh;
+  font-weight: 900;
+}
+
+.div-card-price {
+    padding-bottom: 5ch;
+}
+
+@media (max-width: 1115px) {
+    .div-deals {
+        grid-template-columns: auto auto;
+        margin-right: 1ch;
+    }
+  }
+  
