@@ -5,6 +5,7 @@ import image from "../image/home.png";
 import elephent from "../image/elephent.jpg";
 import cordis from "../image/cordis.jpg";
 import { HiOutlineMail } from "react-icons/hi";
+import Deals from "../Deals/Deals"
 
 function Home() {
   const List = [
@@ -71,7 +72,7 @@ function Home() {
               <Card.Text className="card-desc">{element.desc}</Card.Text>
             </div>
             <Card.Body className="card-body-home">
-              <Card.Title>{element.title}</Card.Title>
+              <Card.Title className="card-title">{element.title}</Card.Title>
               <Card.Text className="card-type-home">{element.type}</Card.Text>
               <Card.Text className="card-city-home">{element.city}</Card.Text>
               <Card.Text className="from">from</Card.Text>
@@ -103,6 +104,8 @@ function Home() {
           </div>
         </Form.Group>
       </Form>
+
+      <Deals/>
     </>
   );
 }
