@@ -1,9 +1,10 @@
 import "./Home.css";
 import React from "react";
-import { Card, ListGroup, Badge } from "react-bootstrap";
+import { Card, ListGroup, Form, Button } from "react-bootstrap";
 import image from "../image/home.png";
 import elephent from "../image/elephent.jpg";
 import cordis from "../image/cordis.jpg";
+import { HiOutlineMail } from "react-icons/hi";
 
 function Home() {
   const List = [
@@ -66,8 +67,8 @@ function Home() {
         {cardHome.map((element) => (
           <Card className="card">
             <div className="div-img-desc">
-            <Card.Img className="card-img" variant="top" src={element.img} />
-            <Card.Text className="card-desc">{element.desc}</Card.Text>
+              <Card.Img className="card-img" variant="top" src={element.img} />
+              <Card.Text className="card-desc">{element.desc}</Card.Text>
             </div>
             <Card.Body className="card-body-home">
               <Card.Title>{element.title}</Card.Title>
@@ -85,6 +86,23 @@ function Home() {
           </Card>
         ))}
       </div>
+
+      <Form>
+        <Form.Group className="form-email">
+          <Form.Label className="email-label">
+            Get the best deals delivered direct to your inbox each day
+          </Form.Label>
+          <div className="div-email-input">
+            <Form.Control
+              className="email-input"
+              type="email"
+              placeholder="Enter email address"
+            ></Form.Control>
+            <HiOutlineMail className="mail-icon" />
+          <Button className="btn-subscribe">Subscribe</Button>
+          </div>
+        </Form.Group>
+      </Form>
     </>
   );
 }
