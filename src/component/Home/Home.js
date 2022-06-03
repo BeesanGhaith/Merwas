@@ -5,7 +5,17 @@ import image from "../image/home.png";
 import elephent from "../image/elephent.jpg";
 import cordis from "../image/cordis.jpg";
 import { HiOutlineMail } from "react-icons/hi";
-import Deals from "../Deals/Deals"
+import { RiHeartAddLine } from "react-icons/ri";
+import Deals from "../Deals/Deals";
+import Collections from "../Collections/Collections";
+import Escapes from "../Escapes/Escapes";
+import Activities from "../Activities/Activities";
+import Store from "../Store/Store";
+import Restaurants from "../Restaurants/Restaurants";
+import Beauty from "../Beauty/Beauty";
+import House from "../House/House";
+import Sport from "../Sport/Sport";
+import Automotive from "../Automotive/Automotive";
 
 function Home() {
   const List = [
@@ -68,8 +78,11 @@ function Home() {
         {cardHome.map((element) => (
           <Card className="card">
             <div className="div-img-desc">
+                <RiHeartAddLine className="fav-icon fs-3" />
               <Card.Img className="card-img" variant="top" src={element.img} />
-              <Card.Text className="card-desc p-5">{element.desc}</Card.Text>
+              {/* <div className=""> */}
+              {/* </div> */}
+              <Card.Text className="card-desc p-3">{element.desc}</Card.Text>
             </div>
             <Card.Body className="card-body-home p-3">
               <Card.Title className="card-title">{element.title}</Card.Title>
@@ -80,7 +93,9 @@ function Home() {
                 <Card.Text>{element.buy}</Card.Text>
                 <div className="card-price-dis d-flex gap-2">
                   <Card.Text className="card-price">{element.price}</Card.Text>
-                  <Card.Text className="card-dis fw-bold">{element.discount}</Card.Text>
+                  <Card.Text className="card-dis fw-bold">
+                    {element.discount}
+                  </Card.Text>
                 </div>
               </div>
             </Card.Body>
@@ -100,12 +115,21 @@ function Home() {
               placeholder="Enter email address"
             ></Form.Control>
             <HiOutlineMail className="mail-icon" />
-          <Button className="btn-subscribe">Subscribe</Button>
+            <Button className="btn-subscribe">Subscribe</Button>
           </div>
         </Form.Group>
       </Form>
 
-      <Deals/>
+      <Deals />
+      <Collections />
+      <Escapes />
+      <Activities />
+      <Store />
+      <Restaurants />
+      <Beauty />
+      <House />
+      <Sport />
+      <Automotive />
     </>
   );
 }
