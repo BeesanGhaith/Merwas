@@ -24,13 +24,12 @@ function Navigation() {
           <FiHeart className="nav-icon" />
           <FiShoppingCart className="nav-icon" />
           <RiUser3Line className="nav-icon" />
-          <IoIosArrowDown className="arrow-icon" />
+          <IoIosArrowDown className="arrow-icon-" />
           <HiOutlineMail className="email-icon" />
-          <Navbar.Text className="nav-text">Subscribe</Navbar.Text>
+          <Navbar.Text className="nav-text-sub">Subscribe</Navbar.Text>
         </Navbar.Collapse>
       </Navbar>
       <Navbar className="navbar2" expand="lg">
-        {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
