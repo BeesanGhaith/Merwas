@@ -1,0 +1,15 @@
+.btn-coll {
+    margin-top: 2vh;
+    width: 50%;
+    border: 2px solid #01b2ee;
+    color: #01b2ee;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.btn-coll:hover {
+    background: white;
+    color: #01b2ee;
+    border: 2px solid #01b2ee;
+}
