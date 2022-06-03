@@ -102,7 +102,7 @@ function Deals() {
           <Card className="card-deals">
             <div className="div-img-desc">
               <Card.Img className="card-img" variant="top" src={element.img} />
-              <Card.Text className="card-desc p-5">{element.desc}</Card.Text>
+              <Card.Text className="card-desc p-3">{element.desc}</Card.Text>
             </div>
             <Card.Body className="card-body-home p-3">
               <Card.Title className="card-title-deals">{element.title}</Card.Title>
