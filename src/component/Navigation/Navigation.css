@@ -16,11 +16,11 @@
   font-size: 2rem;
 }
 
-.arrow-icon {
+.arrow-icon, .arrow-icon- {
   color: white;
 }
 
-.navbar .nav-text {
+.navbar .nav-text, .navbar .nav-text-sub {
   color: white;
 }
 
@@ -76,7 +76,15 @@
 }
 
 @media (max-width: 1115px) {
+  .nav-icon, .arrow-icon-, .email-icon, .navbar .nav-text-sub {
+    display: none;
+  }
+
+  .navbar {
+    margin-bottom: 1ch;
+  }
   .navbar2 {
     display: none;
   }
+
 }
