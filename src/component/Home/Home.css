@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400&display=swap');
 
 body {
   background-color: #f4f7fb;
@@ -15,10 +15,7 @@ body {
 }
 
 .homepage-top {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* gap: 2ch; */
-  padding: 4ch 5ch 3ch 2ch;
+  padding: 4ch 4ch 3ch 2ch;
 }
 
 .list-group {
@@ -28,12 +25,9 @@ body {
 .list-group h3 {
   color: #01b2ee;
   font-weight: 600;
-  /* text-align: left; */
   background-color: white;
   padding-left: 1ch;
   height: 4.2ch;
-  /* margin-bottom: 0; */
-  /* padding-top: 1ch; */
   border-bottom: 1px solid rgb(204, 202, 202);
 }
 
@@ -42,10 +36,7 @@ body {
 }
 
 .li-title {
-  
     font-family: "Source Sans Pro", sans-serif;
-  /* padding-bottom: 0.1ch; */
-  /* padding-top: 0.3ch; */
 }
 
 .list:hover {
@@ -57,7 +48,6 @@ body {
   color: rgb(165, 165, 165);
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
-  /* margin-top: 0.5ch; */
 }
 
 .card {
@@ -80,6 +70,7 @@ body {
     color: white;
     font-weight: 600;
     cursor: pointer;
+    width: 100%;
     /* padding-left: 2ch;
     padding-right: 2ch; */
 
@@ -94,6 +85,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fav-icon {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  z-index: 1;
+  background-color: rgb(230, 228, 228);
+  border-radius: 50%;
+  padding: 0.5vh;
 }
 
 .card-title {
@@ -142,10 +143,6 @@ body {
   /* font-weight: 900; */
 }
 
-.card-price-dis {
-  /* display: flex;
-  gap: 1.5ch; */
-}
 
 .form-email {
     display: flex;
@@ -196,6 +193,10 @@ body {
 @media (max-width: 1115px) {
     .list-group {
       display: none;
+    }
+
+    .homepage-top {
+      padding-right: 1ch;
     }
   }
   
