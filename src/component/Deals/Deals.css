@@ -2,8 +2,13 @@
     /* margin-left: 1ch; */
     font-size: 2rem;
     font-family: 'Sarabun', sans-serif;
-    font-weight: 600;
+    font-weight: bolder;
     /* margin: 2ch 0 2ch 1ch; */
+}
+
+.title-deals:hover {
+    color: #01b2ee;
+    cursor: pointer;
 }
 
 .div-deals {
@@ -14,7 +19,7 @@
 }
 
 .card-deals {
-    height: 58vh;
+    height: 380px;
     border: none;
     border-bottom: 1px solid rgb(214, 213, 213);
 
@@ -23,8 +28,8 @@
 .btn-view-deals {
     background-color: #01b2ee;
     width: 14ch;
-    margin-top: -2ch;
-    margin-left: 3ch;
+    margin-top: -1ch;
+    margin-left: 1ch;
     font-weight: 400;
     border: none;
 }
@@ -34,7 +39,7 @@
 }
 
 .card-title-deals {
-    font-size: large;
+    font-size: medium;
 }
 
 .card-dis-deals {
