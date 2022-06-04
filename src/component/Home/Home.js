@@ -5,7 +5,11 @@ import image from "../image/home.png";
 import elephent from "../image/elephent.jpg";
 import cordis from "../image/cordis.jpg";
 import { HiOutlineMail } from "react-icons/hi";
-import { RiHeartAddLine } from "react-icons/ri";
+import { RiHeartAddLine, RiUser3Line } from "react-icons/ri";
+import { BsFacebook } from "react-icons/bs";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { SiYoutubemusic } from "react-icons/si";
+import { FaCameraRetro } from "react-icons/fa";
 import Deals from "../Deals/Deals";
 import Collections from "../Collections/Collections";
 import Escapes from "../Escapes/Escapes";
@@ -16,6 +20,9 @@ import Beauty from "../Beauty/Beauty";
 import House from "../House/House";
 import Sport from "../Sport/Sport";
 import Automotive from "../Automotive/Automotive";
+import { Navbar } from "react-bootstrap";
+import { FiHome, FiSearch, FiShoppingCart } from "react-icons/fi";
+import { BiCategory } from "react-icons/bi";
 
 function Home() {
   const List = [
@@ -78,10 +85,8 @@ function Home() {
         {cardHome.map((element) => (
           <Card className="card">
             <div className="div-img-desc">
-                <RiHeartAddLine className="fav-icon fs-3" />
+              <RiHeartAddLine className="fav-icon fs-3" />
               <Card.Img className="card-img" variant="top" src={element.img} />
-              {/* <div className=""> */}
-              {/* </div> */}
               <Card.Text className="card-desc p-3">{element.desc}</Card.Text>
             </div>
             <Card.Body className="card-body-home p-3">
@@ -130,6 +135,97 @@ function Home() {
       <House />
       <Sport />
       <Automotive />
+
+      <div className="div-footer p-3 d-flex">
+        <div className="footer d-flex flex-wrap">
+          <div>
+            <h6>Follow us on</h6>
+            <div className="footer-icons d-flex gap-2">
+              <BsFacebook className="facebook-icon" />
+              <AiFillTwitterCircle className="twitter-icon" />
+              <FaCameraRetro className="camera-icon" />
+              <SiYoutubemusic className="youtube-icon" />
+            </div>
+            <p className="fw-bold">Get app exclusive deals</p>
+            <div>
+              <Button className="btn-download">Download our App</Button>
+            </div>
+          </div>
+          <div>
+            <h6>GrabOne</h6>
+            <p>Contact Us</p>
+            <p>About Us</p>
+            <p>Terms & Returns</p>
+            <p>Blog</p>
+            <p>Gift Cards</p>
+          </div>
+          <div>
+            <h6>My Account</h6>
+            <p>My Account</p>
+            <p>My Cart</p>
+            <p>My Coupons</p>
+            <p>FAQ</p>
+          </div>
+          <div>
+            <h6>Merchants</h6>
+            <p>Run a Deal</p>
+            <p>Merchant Centre</p>
+          </div>
+        </div>
+        <div>
+          <Form className="footer-form">
+            <Form.Group className="">
+              <Form.Label className="fw-bold">Newsletter Signup</Form.Label>
+              <br />
+              <Form.Text className="fw-bold">
+                Sign up for our daily emails and we'll send you all the best
+                deals, tailored for you.
+              </Form.Text>
+              <div className="d-flex mt-3">
+                <Form.Control
+                  className="footer-input"
+                  type="email"
+                  placeholder="Enter email address"
+                ></Form.Control>
+                <HiOutlineMail className="mail-icon" />
+                <Button className="btn-subscribe">Subscribe</Button>
+              </div>
+            </Form.Group>
+          </Form>
+        </div>
+      </div>
+      <div className="privacy-policy pt-3 p-5">
+        <span className="pri-pol">Privacy Policy</span>
+        <span>© 2022 GrabOne Limited</span>
+      </div>
+
+      <div className="div-nav-bottom">
+        <Navbar
+          className="navbar-bottom d-flex justify-content-around"
+          fixed="bottom"
+        >
+          <div>
+            <FiHome className="fs-5" />
+            <Navbar.Text>Home</Navbar.Text>
+          </div>
+          <div>
+            <FiSearch className="fs-5" />
+            <Navbar.Text>Search</Navbar.Text>
+          </div>
+          <div>
+            <BiCategory className="fs-5" />
+            <Navbar.Text>Categories</Navbar.Text>
+          </div>
+          <div>
+            <FiShoppingCart className="fs-5" />
+            <Navbar.Text>Cart</Navbar.Text>
+          </div>
+          <div>
+            <RiUser3Line className="fs-5" />
+            <Navbar.Text>Account</Navbar.Text>
+          </div>
+        </Navbar>
+      </div>
     </>
   );
 }
