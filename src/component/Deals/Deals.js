@@ -1,6 +1,7 @@
 import "./Deals.css";
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import { RiHeartAddLine } from "react-icons/ri";
 import image1 from "../image/image1.jpg";
 import image2 from "../image/image2.jpg";
 import image3 from "../image/image3.jpg";
@@ -95,17 +96,22 @@ function Deals() {
   ];
   return (
     <>
-      <span className="title-deals m-3">Featured Auckland deals</span>
-      <Button className="btn-view-deals">View More</Button>
+      <div className="div-span-btn">
+        <span className="title-deals m-3">Featured Auckland deals</span>
+        <Button className="btn-view-deals">View More</Button>
+      </div>
       <div className="div-deals gap-3">
         {cardDeals.map((element) => (
           <Card className="card-deals">
             <div className="div-img-desc">
+              <RiHeartAddLine className="fav-icon fs-3" />
               <Card.Img className="card-img" variant="top" src={element.img} />
               <Card.Text className="card-desc p-3">{element.desc}</Card.Text>
             </div>
             <Card.Body className="card-body-home p-3">
-              <Card.Title className="card-title-deals">{element.title}</Card.Title>
+              <Card.Title className="card-title-deals">
+                {element.title}
+              </Card.Title>
               <Card.Text className="card-type-home">{element.type}</Card.Text>
               <Card.Text className="card-city-home">{element.city}</Card.Text>
               <Card.Text className="from mt-2">from</Card.Text>
@@ -113,7 +119,9 @@ function Deals() {
                 <Card.Text>{element.buy}</Card.Text>
                 <div className="card-price-dis d-flex gap-2">
                   <Card.Text className="card-price">{element.price}</Card.Text>
-                  <Card.Text className="card-dis-deals fw-bold">{element.discount}</Card.Text>
+                  <Card.Text className="card-dis-deals fw-bold">
+                    {element.discount}
+                  </Card.Text>
                 </div>
               </div>
             </Card.Body>
