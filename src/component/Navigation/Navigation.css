@@ -82,7 +82,11 @@
 
   .navbar {
     margin-bottom: 1ch;
+    position: sticky;
+    top: 0;
+    z-index: 2;
   }
+  
   .navbar2 {
     display: none;
   }
