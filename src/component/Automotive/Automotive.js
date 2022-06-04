@@ -5,9 +5,10 @@ import image42 from "../image/image42.jpg";
 import image43 from "../image/image43.jpg";
 import image44 from "../image/image44.jpg";
 import { Card, Button } from "react-bootstrap";
+import { RiHeartAddLine } from "react-icons/ri";
 
 function Automotive() {
-  const cardAuto= [
+  const cardAuto = [
     {
       img: image41,
       title: "Seven-Piece Sponge & Scourer Car Pads",
@@ -39,17 +40,16 @@ function Automotive() {
   ];
   return (
     <>
-      <span className="title-deals m-3">Automotive</span>
-      <Button className="btn-view-deals">View More</Button>
+      <div className="div-span-btn">
+        <span className="title-deals m-3">Automotive</span>
+        <Button className="btn-view-deals">View More</Button>
+      </div>
       <div className="div-deals gap-3">
         {cardAuto.map((element) => (
-          <Card className="card-deals card-act">
+          <Card className="card-deals">
             <div className="div-img-desc">
-              <Card.Img
-                className="card-img"
-                variant="top"
-                src={element.img}
-              />
+              <RiHeartAddLine className="fav-icon fs-3" />
+              <Card.Img className="card-img" variant="top" src={element.img} />
               <Card.Text className="free">FREE DELIVERY</Card.Text>
               <Card.Text className="card-desc p-3">{element.desc}</Card.Text>
             </div>
