@@ -1,11 +1,6 @@
 import "./Navigation.css";
 import React from "react";
-import {
-  Navbar,
-  Nav,
-  Form,
-  FormControl,
-} from "react-bootstrap";
+import { Navbar, Nav, Form, FormControl } from "react-bootstrap";
 import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
 import { IoIosArrowDown } from "react-icons/io";
 import { FiHeart, FiShoppingCart, FiSearch } from "react-icons/fi";
@@ -55,7 +50,7 @@ function Navigation() {
         </Navbar.Collapse>
       </Navbar>
     </>
-  )
+  );
 }
 
-export default Navigation
+export default Navigation;

@@ -1,4 +1,3 @@
-import "./Store.css";
 import React from "react";
 import image21 from "../image/image21.jpg";
 import image22 from "../image/image22.jpg";

@@ -1,4 +1,3 @@
-import "./Escapes.css";
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { RiHeartAddLine } from "react-icons/ri";

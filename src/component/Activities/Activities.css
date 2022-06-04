@@ -1,24 +1,24 @@
 .price {
-    margin-top: 12vh;
+  margin-top: 12vh;
 }
 
 .img-act {
-    border-bottom: 1px solid rgb(214, 213, 213);
+  border-bottom: 1px solid rgb(214, 213, 213);
 }
 
 .free {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 0;
-    font-size: 0.8rem;
-    background-color: #01b2ee;
-    color: white;
-    font-weight: bold;
-    padding: 1ch 3ch;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  background-color: #01b2ee;
+  color: white;
+  font-weight: bold;
+  padding: 1ch 3ch;
 }
 
 @media (max-width: 648px) {
-    .card-act {
-        height: 100%;
-    }
+  .card-act {
+    height: 100%;
   }
+}

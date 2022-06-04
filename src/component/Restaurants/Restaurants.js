@@ -1,4 +1,3 @@
-import "./Restaurants.css";
 import React from "react";
 import image25 from "../image/image25.jpg";
 import image26 from "../image/image26.jpg";

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400&display=swap");
 
 body {
   background-color: #f4f7fb;
@@ -36,7 +36,7 @@ body {
 }
 
 .li-title {
-    font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .list:hover {
@@ -52,36 +52,36 @@ body {
 
 .card {
   height: 70%;
-  font-family: 'Sarabun', sans-serif;
+  font-family: "Sarabun", sans-serif;
 }
 
 .div-img-desc {
-    position: relative;
+  position: relative;
 }
 
 .card-desc {
-    display: none;
-    background-color: #01b2ee;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    opacity: 0.9;
-    text-align: center;
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    width: 100%;
+  display: none;
+  background-color: #01b2ee;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  opacity: 0.9;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
 }
 
-.card-img:hover ~ .card-desc{
-    display: block;
+.card-img:hover ~ .card-desc {
+  display: block;
 }
 
 .card-desc:hover {
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fav-icon {
@@ -139,52 +139,52 @@ body {
   margin-top: -1.5vh;
 }
 
-
 .form-email {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 3ch;
-    margin: 0 1ch 2ch 1.2ch;
-    background-color: white;
-    font-family: 'Sarabun', sans-serif;
-    color: #01b2ee;
-    font-weight: 700;
-    font-size: 1.5rem;
-    border-bottom: 1px solid rgb(214, 213, 213);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3ch;
+  margin: 0 1ch 2ch 1.2ch;
+  background-color: white;
+  font-family: "Sarabun", sans-serif;
+  color: #01b2ee;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgb(214, 213, 213);
 }
 
 .email-label {
-    margin-right: 2ch;
+  margin-right: 2ch;
 }
 
 .email-input {
-    box-shadow: 0 0 10px rgb(214, 212, 212);
-    border-radius: 4px 0 0 4px;
-    padding-left: 5ch;
+  box-shadow: 0 0 10px rgb(214, 212, 212);
+  border-radius: 4px 0 0 4px;
+  padding-left: 5ch;
 }
 
 .btn-subscribe {
-    background-color: #01b2ee;
-    width: 13ch;
-    box-shadow: 0 0 10px #01b2ee;
-    border-radius: 0 4px 4px 0;
+  background-color: #01b2ee;
+  width: 13ch;
+  box-shadow: 0 0 10px #01b2ee;
+  border-radius: 0 4px 4px 0;
 }
 
 .div-email-input {
-    width: 46%;
-    display: flex;
-    position: relative;
+  width: 46%;
+  display: flex;
+  position: relative;
 }
 
-.btn-subscribe:hover, .btn-download:hover {
-    background-color: #13c2fc;
+.btn-subscribe:hover,
+.btn-download:hover {
+  background-color: #13c2fc;
 }
 
 .mail-icon {
-    position: absolute;
-    top: 0.8ch;
-    left: 1ch;
-    color: gray;
+  position: absolute;
+  top: 0.8ch;
+  left: 1ch;
+  color: gray;
 }
 
 .div-footer {
@@ -214,7 +214,8 @@ body {
   margin-bottom: 2ch;
 }
 
-.facebook-icon, .youtube-icon {
+.facebook-icon,
+.youtube-icon {
   font-size: 3.5ch;
 }
 
@@ -228,7 +229,10 @@ body {
   margin-top: 3px;
 }
 
-.facebook-icon:hover, .youtube-icon:hover, .twitter-icon:hover, .camera-icon:hover {
+.facebook-icon:hover,
+.youtube-icon:hover,
+.twitter-icon:hover,
+.camera-icon:hover {
   cursor: pointer;
   color: #01b2ee;
 }
@@ -283,23 +287,23 @@ body {
 }
 
 @media (max-width: 1115px) {
-    .list-group {
-      display: none;
-    }
+  .list-group {
+    display: none;
+  }
 
-    .form-email {
-      flex-direction: column;
-    }
+  .form-email {
+    flex-direction: column;
+  }
 
-    .div-email-input {
-        width: 90%;
+  .div-email-input {
+    width: 90%;
   }
 
   .div-footer {
     display: flex;
     flex-direction: column-reverse;
   }
-  
+
   .footer-form {
     border-bottom: 1px solid rgb(207, 205, 205);
     padding-bottom: 3ch;
@@ -313,9 +317,9 @@ body {
 
 @media (max-width: 648px) {
   .homepage-top {
-      flex-direction: column;
-      padding-left: 1.5ch;
-      padding-right: 1.5ch;
+    flex-direction: column;
+    padding-left: 1.5ch;
+    padding-right: 1.5ch;
   }
 
   .footer {

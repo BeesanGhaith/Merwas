@@ -1,4 +1,3 @@
-import "./Automotive.css";
 import React from "react";
 import image41 from "../image/image41.jpg";
 import image42 from "../image/image42.jpg";

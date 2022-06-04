@@ -1,9 +1,7 @@
 .title-deals {
-  /* margin-left: 1ch; */
   font-size: 2rem;
   font-family: "Sarabun", sans-serif;
   font-weight: bolder;
-  /* margin: 2ch 0 2ch 1ch; */
 }
 
 .title-deals:hover {
@@ -44,7 +42,6 @@
   font-size: 2rem;
   color: #01b2ee;
   margin-top: -1.5vh;
-  /* font-weight: 900; */
 }
 
 @media (max-width: 1115px) and (min-width: 648px) {

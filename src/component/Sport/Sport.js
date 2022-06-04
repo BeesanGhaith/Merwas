@@ -1,4 +1,3 @@
-import "./Sport.css";
 import React from "react";
 import image37 from "../image/image37.jpg";
 import image38 from "../image/image38.jpg";

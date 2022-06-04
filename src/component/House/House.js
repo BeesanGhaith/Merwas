@@ -1,4 +1,3 @@
-import "./House.css";
 import React from "react";
 import image33 from "../image/image33.jpg";
 import image34 from "../image/image34.jpg";

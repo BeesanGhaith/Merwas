@@ -1,4 +1,3 @@
-import "./Beauty.css";
 import React from "react";
 import image29 from "../image/image29.jpg";
 import image30 from "../image/image30.jpg";

@@ -16,11 +16,13 @@
   font-size: 2rem;
 }
 
-.arrow-icon, .arrow-icon- {
+.arrow-icon,
+.arrow-icon- {
   color: white;
 }
 
-.navbar .nav-text, .navbar .nav-text-sub {
+.navbar .nav-text,
+.navbar .nav-text-sub {
   color: white;
 }
 
@@ -76,7 +78,10 @@
 }
 
 @media (max-width: 1115px) {
-  .nav-icon, .arrow-icon-, .email-icon, .navbar .nav-text-sub {
+  .nav-icon,
+  .arrow-icon-,
+  .email-icon,
+  .navbar .nav-text-sub {
     display: none;
   }
 
@@ -86,9 +91,8 @@
     top: 0;
     z-index: 2;
   }
-  
+
   .navbar2 {
     display: none;
   }
-
 }
