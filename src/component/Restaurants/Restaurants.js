@@ -5,6 +5,7 @@ import image26 from "../image/image26.jpg";
 import image27 from "../image/image27.jpg";
 import image28 from "../image/image28.jpg";
 import { Card, Button } from "react-bootstrap";
+import { RiHeartAddLine } from "react-icons/ri";
 
 function Restaurants() {
   const cardRest = [
@@ -51,17 +52,22 @@ function Restaurants() {
   ];
   return (
     <>
-      <span className="title-deals m-3">Restaurants, Bars, Cafes</span>
-      <Button className="btn-view-deals">View More</Button>
+      <div className="div-span-btn">
+        <span className="title-deals m-3">Restaurants, Bars, Cafes</span>
+        <Button className="btn-view-deals">View More</Button>
+      </div>
       <div className="div-deals gap-3">
         {cardRest.map((element) => (
           <Card className="card-deals">
             <div className="div-img-desc">
+              <RiHeartAddLine className="fav-icon fs-3" />
               <Card.Img className="card-img" variant="top" src={element.img} />
               <Card.Text className="card-desc p-3">{element.desc}</Card.Text>
             </div>
             <Card.Body className="card-body-home p-3">
-              <Card.Title className="card-title-deals">{element.title}</Card.Title>
+              <Card.Title className="card-title-deals">
+                {element.title}
+              </Card.Title>
               <Card.Text className="card-type-home">{element.type}</Card.Text>
               <Card.Text className="card-city-home">{element.city}</Card.Text>
               <Card.Text className="from mt-2">from</Card.Text>
