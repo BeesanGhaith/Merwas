@@ -5,6 +5,7 @@ import image38 from "../image/image38.jpg";
 import image39 from "../image/image39.jpg";
 import image40 from "../image/image40.jpg";
 import { Card, Button } from "react-bootstrap";
+import { RiHeartAddLine } from "react-icons/ri";
 
 function Sport() {
   const cardSport = [
@@ -43,12 +44,15 @@ function Sport() {
   ];
   return (
     <>
-      <span className="title-deals m-3">Fitness & Sports</span>
-      <Button className="btn-view-deals">View More</Button>
+      <div className="div-span-btn">
+        <span className="title-deals m-3">Fitness & Sports</span>
+        <Button className="btn-view-deals">View More</Button>
+      </div>
       <div className="div-deals gap-3">
         {cardSport.map((element) => (
           <Card className="card-deals">
             <div className="div-img-desc">
+              <RiHeartAddLine className="fav-icon fs-3" />
               <Card.Img
                 className="card-img img-act"
                 variant="top"
