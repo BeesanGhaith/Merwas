@@ -15,9 +15,10 @@ function Collections() {
   ];
   return (
     <>
-      <span className="title-deals m-3">Collections</span>
-      <Button className="btn-view-deals">View More</Button>
-
+      <div className="div-span-btn">
+        <span className="title-deals m-3">Collections</span>
+        <Button className="btn-view-deals">View More</Button>
+      </div>
       <div className="div-deals gap-3">
         {cardCollections.map((element) => (
           <Card className="card-deals">
@@ -30,7 +31,9 @@ function Collections() {
                 {element.title}
               </Card.Title>
               <Card.Text className="card-type-home">{element.type}</Card.Text>
-            <Button className="btn-coll" variant="outline-primary">View Collection</Button>
+              <Button className="btn-coll" variant="outline-primary">
+                View Collection
+              </Button>
             </Card.Body>
           </Card>
         ))}
