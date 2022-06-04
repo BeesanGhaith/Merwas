@@ -71,9 +71,6 @@ body {
     font-weight: 600;
     cursor: pointer;
     width: 100%;
-    /* padding-left: 2ch;
-    padding-right: 2ch; */
-
 }
 
 .card-img:hover ~ .card-desc{
@@ -97,13 +94,16 @@ body {
   padding: 0.5vh;
 }
 
+.fav-icon {
+  cursor: grabbing;
+}
+
 .card-title {
   font-weight: 600;
 }
 
 .card-body-home {
   line-height: 4px;
-  /* padding: 2ch 2ch 1ch 2ch; */
 }
 
 .card-type-home {
@@ -118,12 +118,9 @@ body {
   float: right;
   color: #01b2ee;
   font-size: 0.9rem;
-  /* margin-top: 1ch; */
 }
 
 .div-card-price {
-  /* display: flex;
-  justify-content: space-between; */
   font-family: "Montserrat", sans-serif;
   color: rgb(165, 165, 165);
   margin-top: 10vh;
@@ -140,12 +137,12 @@ body {
   font-size: 2.2rem;
   color: #01b2ee;
   margin-top: -1.5vh;
-  /* font-weight: 900; */
 }
 
 
 .form-email {
     display: flex;
+    flex-wrap: wrap;
     padding: 3ch;
     margin: 0 1ch 2ch 1.2ch;
     background-color: white;
@@ -179,7 +176,7 @@ body {
     position: relative;
 }
 
-.btn-subscribe:hover {
+.btn-subscribe:hover, .btn-download:hover {
     background-color: #13c2fc;
 }
 
@@ -190,13 +187,139 @@ body {
     color: gray;
 }
 
+.div-footer {
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  gap: 10ch;
+}
+
+.footer {
+  gap: 10ch;
+}
+
+.footer h6 {
+  margin-bottom: 3ch;
+}
+
+.footer p:hover {
+  color: #01b2ee;
+  cursor: pointer;
+}
+
+.footer div::first-line {
+  font-weight: bold;
+}
+
+.footer-icons {
+  margin-bottom: 2ch;
+}
+
+.facebook-icon, .youtube-icon {
+  font-size: 3.5ch;
+}
+
+.twitter-icon {
+  font-size: 4ch;
+  margin-top: -1px;
+}
+
+.camera-icon {
+  font-size: 3ch;
+  margin-top: 3px;
+}
+
+.facebook-icon:hover, .youtube-icon:hover, .twitter-icon:hover, .camera-icon:hover {
+  cursor: pointer;
+  color: #01b2ee;
+}
+
+.btn-download {
+  background-color: #01b2ee;
+  box-shadow: 0 0 10px #01b2ee;
+  height: 6ch;
+  width: 25ch;
+  margin-top: 2ch;
+}
+
+.footer-input {
+  width: 80%;
+  border-radius: 4px 0 0 4px;
+}
+
+.privacy-policy {
+  background-color: white;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  border-top: 1px solid rgb(207, 205, 205);
+}
+
+.privacy-policy .pri-pol {
+  color: #01b2ee;
+}
+
+.div-nav-bottom {
+  display: none;
+  position: sticky;
+  bottom: 0;
+}
+
+.navbar-bottom {
+  background-color: white;
+  border-top: 1px solid rgb(235, 234, 234);
+  margin-bottom: 0;
+}
+
+.navbar-bottom div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1ch;
+}
+
+.navbar-bottom div:hover {
+  cursor: pointer;
+  color: #01b2ee;
+}
+
 @media (max-width: 1115px) {
     .list-group {
       display: none;
     }
 
-    .homepage-top {
-      padding-right: 1ch;
+    .form-email {
+      flex-direction: column;
     }
+
+    .div-email-input {
+        width: 90%;
+  }
+
+  .div-footer {
+    display: flex;
+    flex-direction: column-reverse;
   }
   
+  .footer-form {
+    border-bottom: 1px solid rgb(207, 205, 205);
+    padding-bottom: 3ch;
+    margin-bottom: -7ch;
+  }
+
+  .div-nav-bottom {
+    display: block;
+  }
+}
+
+@media (max-width: 648px) {
+  .homepage-top {
+      flex-direction: column;
+      padding-left: 1.5ch;
+      padding-right: 1.5ch;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 5ch;
+  }
+}
